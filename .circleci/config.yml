@@ -7,11 +7,12 @@ defaults: &defaults
 jobs:
   build-config:
     <<: *defaults
-  steps:
+    steps:
       - checkout
       - attach_workspace:
           at: /tmp/workspace
       - run: echo "here we are"
+
 
 workflows:
   version: 2
