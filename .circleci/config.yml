@@ -1,0 +1,24 @@
+version: 2
+
+defaults: &defaults
+  docker:
+    - image: gcr.io/planet-4-151612/p4-builder:latest
+
+jobs:
+  build-config:
+    <<: *defaults
+  steps:
+      - checkout
+      - attach_workspace:
+          at: /tmp/workspace
+      - run: echo "here we are"
+
+workflows:
+  version: 2
+  build-config:
+    jobs:
+    - build-config:
+        context: org-global
+        filters:
+          branches:
+            only: master
