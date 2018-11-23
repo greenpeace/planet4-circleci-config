@@ -1,7 +1,5 @@
 # Greenpeace Planet 4 CircleCi configurator
 
- [![CircleCI](https://circleci.com/gh/greenpeace/planet4-base-fork/tree/develop.svg?style=shield)](https://circleci.com/gh/greenpeace/planet4-base-fork/tree/develop)
-
 This project provides a script with which a developer can update multiple configuration files for planet4-nro projects
 The planet4-nro circleCI configuration files consist of 3 parts: 
 - A header 
