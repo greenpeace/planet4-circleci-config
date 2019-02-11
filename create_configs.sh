@@ -3,13 +3,42 @@ set -eu
 # export SITE=koyansync
 
 all_sites=( \
+    africa \
+    argentina \
+    belgium \
+    brasil \
+    bulgaria \
+    canada \
+    chile \
+    colombia \
+    croatia \
+    czech-republic \
+    denmark \
+    eu-unit \
+    finland \
+    greece \
+    handbook \
+    hungary \
+    india \
+    indonesia \
+    international \
+    italy \
+    japan \
     koyansync \
+    luxembourg \
+    mena \
+    mexico \
+    netherlands \
+    new-zealand \
+    storytelling \
+    sweden \
     koyantestdash \
     )
 
 for SITE in "${all_sites[@]}"
 do
     git clone https://github.com/greenpeace/planet4-${SITE} --quiet
+    git -C "planet4-${SITE}" checkout develop --quiet
     # cd planet4-${SITE}/.circleci
     if [ -f planet4-${SITE}/.circleci/artifacts.yml ]
     then
