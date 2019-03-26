@@ -18,6 +18,7 @@ all_sites=( \
     finland \
     greece \
     handbook \
+    hongkong \
     hungary \
     india \
     indonesia \
@@ -26,12 +27,18 @@ all_sites=( \
     japan \
     koyansync \
     luxembourg \
+    malaysia \
     mena \
     mexico \
     netherlands \
     new-zealand \
+    norway \
+    philippines \
+    slovenia \
     storytelling \
     sweden \
+    southeastasia
+    thailand \
     koyantestdash \
     )
 
