@@ -37,6 +37,7 @@ all_sites=( \
     slovenia \
     storytelling \
     sweden \
+    switzerland \
     southeastasia
     thailand \
     koyantestdash \
