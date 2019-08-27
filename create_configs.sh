@@ -24,6 +24,7 @@ all_sites=( \
     india \
     indonesia \
     international \
+    israel \
     italy \
     japan \
     koyansync \
@@ -35,6 +36,7 @@ all_sites=( \
     netherlands \
     new-zealand \
     norway \
+    peru \
     philippines \
     poland \
     romania \
@@ -43,9 +45,11 @@ all_sites=( \
     storytelling \
     sweden \
     switzerland \
-    thailand \
     taiwan \
+    thailand \
+    turkey \
     koyantestdash \
+    workfor \
     )
 
 for SITE in "${all_sites[@]}"
@@ -59,7 +63,7 @@ do
 
         if ! git -C "planet4-${SITE}" diff --quiet
         then
-            git -C "planet4-${SITE}" commit -m "Updated circleCI. Backup and auto-sync" .circleci/config.yml
+            git -C "planet4-${SITE}" commit -m "Updated circleCI. Notify admins about sync" .circleci/config.yml
             git -C "planet4-${SITE}" push
             echo "planet4-${SITE} - Generated and pushed new configuration"
         else
@@ -71,4 +75,3 @@ do
 
     rm -rf planet4-${SITE}
 done
-
