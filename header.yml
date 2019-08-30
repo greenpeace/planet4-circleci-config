@@ -1,6 +1,16 @@
-version: 2
+version: 2.1
+
+parameters:
+  run_release_init:
+    type: boolean
+    default: true
+  run_release_hold:
+    type: boolean
+    default: false
+  run_release_finish:
+    type: boolean
+    default: false
 
 defaults: &defaults
   docker:
     - image: greenpeaceinternational/p4-builder:latest
-

@@ -63,7 +63,7 @@ do
 
         if ! git -C "planet4-${SITE}" diff --quiet
         then
-            git -C "planet4-${SITE}" commit -m "Updated circleCI. Notify admins about sync" .circleci/config.yml
+            git -C "planet4-${SITE}" commit -m "Updated circleCI. BackstopJS and AUTO-PROCEED" .circleci/config.yml
             git -C "planet4-${SITE}" push
             echo "planet4-${SITE} - Generated and pushed new configuration"
         else
